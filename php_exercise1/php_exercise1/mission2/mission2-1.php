@@ -21,21 +21,21 @@
         </form>
 
         <?php
-        if(!empty($_POST["comment"]))
+        $filename='kadai2-1.txt';
+        if(!empty($_POST["comment"]) and !empty($_POST["name"]))
         {
-            $filename='kadai2-1.txt';
             $fp=fopen($filename,'a');
             $output =$_POST["name"] . ": " . $_POST["comment"] . "\n";
             fwrite($fp,$output);
             fclose($fp);
 
-            $hyouji=file($filename);
-            foreach($hyouji as $value)
-            {
-                print $value . "<br />";
-            }
-        }
 
+        }
+        $hyouji=file($filename);
+        foreach($hyouji as $value)
+        {
+            print $value . "<br />";
+        }
 
         ?>
     </center>
