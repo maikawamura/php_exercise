@@ -1,4 +1,17 @@
 ﻿
-body {
-    background-color: #9f29c5;
+body 
+{
+    background-color: #F8E0EC;
+    font-size: 20px;
+}
+
+p 
+{
+    color: #8A4B08;
+    font-size: 30px;
+}
+
+table 
+{
+    width: 400px;
 }

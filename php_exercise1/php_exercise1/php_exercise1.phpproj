@@ -17,5 +17,21 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="index.php" />
+    <Compile Include="mission1\mission1-1.php" />
+    <Compile Include="mission1\mission1-2.php" />
+    <Compile Include="mission1\mission1-3.php" />
+    <Compile Include="mission1\mission1-4.php" />
+    <Compile Include="mission2\mission2-2.php" />
+    <Compile Include="mission2\mission2-1.php" />
+    <Compile Include="mission1\mission1-6.php" />
+    <Compile Include="mission1\mission1-7.php" />
+    <Compile Include="mission1\mission1-5.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="mission1\" />
+    <Folder Include="mission2\" />
   </ItemGroup>
 </Project>
