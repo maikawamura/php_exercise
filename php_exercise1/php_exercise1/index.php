@@ -8,9 +8,6 @@
         <h1>Index of /</h1>
         <ul>
             <li>
-                <a href="check.html">check.html</a>
-            </li>
-            <li>
                 <a href="mission1/kadai1-2.txt">kadai1-2.txt</a>
             </li>
             <li>

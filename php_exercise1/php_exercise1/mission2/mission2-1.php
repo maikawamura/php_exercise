@@ -22,6 +22,7 @@
 
         <?php
         $filename='kadai2-1.txt';
+        fclose(fopen($filename,"a"));
         if(!empty($_POST["comment"]) and !empty($_POST["name"]))
         {
             $fp=fopen($filename,'a');

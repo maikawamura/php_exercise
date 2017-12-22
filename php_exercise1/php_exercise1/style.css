@@ -19,10 +19,12 @@ table
 td 
 {
     vertical-align: top;
+    text-align: left;
 
 }
 
 .hclass
 {
     font-weight:700;
+    width:20%;
 }

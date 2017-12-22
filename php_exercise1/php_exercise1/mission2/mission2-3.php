@@ -26,6 +26,7 @@
 
         <?php
         $filename='kadai2-3.txt';
+        fclose(fopen($filename,"a"));
         if(!empty($_POST["comment"]) and !empty($_POST["name"]))
         {
 
@@ -42,7 +43,7 @@
 
             $output  = $num . "<>";
             date_default_timezone_set('Asia/Tokyo');
-            $output .= htmlspecialchars($_POST["name"]) . "<>" . date("Y/m/d/D G:i:s") . "<>" . htmlspecialchars($_POST["comment"]) . "\n";
+            $output .= date("Y/m/d/D G:i:s") . "<>" . htmlentities($_POST["name"]) . "<>" . htmlentities($_POST["comment"]) . "\n";
             $fp=fopen($filename,'a');
             fwrite($fp,$output);
             fclose($fp);
@@ -59,15 +60,15 @@
             <table style="width: 400px">
                 <tr>
                     <td class="hclass">No.' . $data[0] . '</td>
-                    <td>' . $data[2] . '</td>
-                </tr>
-                <tr>
-                    <td class="hclass">name:</td>
                     <td>' . $data[1] . '</td>
                 </tr>
                 <tr>
-                    <td class="hclass">comment:</td>
-                    <td>' . $data[3] . '</td>
+                    <td class="hclass">Name:</td>
+                    <td>' . html_entity_decode($data[2]) . '</td>
+                </tr>
+                <tr>
+                    <td class="hclass">Comment:</td>
+                    <td>' . html_entity_decode($data[3]) . '</td>
                 </tr>
             </table>
             <br/><br/>';
