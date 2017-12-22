@@ -25,19 +25,19 @@
             <?php
             for($i = 1; $i <= 7; $i++)
             {
-                echo "<li>";
-                echo "<a href='mission1/mission1-" . $i;
-                echo ".php'>mission1-" . $i;
-                echo ".php</a>";
-                echo "</li>";
+                echo "<li>
+                      <a href='mission1/mission1-" . $i .
+                      ".php'>mission1-" . $i .
+                      ".php</a>
+                      </li>";
             }
             for($i = 1; $i <= 15; $i++)
             {
-                echo "<li>";
-                echo "<a href='mission2/mission2-" . $i;
-                echo ".php'>mission2-" . $i;
-                echo ".php</a>";
-                echo "</li>";
+                echo "<li>
+                      <a href='mission2/mission2-" . $i .
+                      ".php'>mission2-" . $i .
+                      ".php</a>
+                      </li>";
             }
             ?>
         </ul>

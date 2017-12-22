@@ -8,13 +8,13 @@
         <form action="mission2-3.php" method="post">
             <table>
                 <tr>
-                    <td>name</td>
+                    <td class="hclass">name</td>
                     <td>
                         <textarea name="name" cols="30" rows="1"></textarea>
                     </td>
                 </tr>
                 <tr>
-                    <td>comment</td>
+                    <td class="hclass">comment</td>
                     <td>
                         <textarea name="comment" cols="30" rows="3"></textarea>
                     </td>
@@ -42,7 +42,7 @@
 
             $output  = $num . "<>";
             date_default_timezone_set('Asia/Tokyo');
-            $output .=$_POST["name"] . "<>" . $_POST["comment"] . "<>" . date("Y/m/d/D G:i:s"). "\n";
+            $output .= htmlspecialchars($_POST["name"]) . "<>" . date("Y/m/d/D G:i:s") . "<>" . htmlspecialchars($_POST["comment"]) . "\n";
             $fp=fopen($filename,'a');
             fwrite($fp,$output);
             fclose($fp);
@@ -53,8 +53,24 @@
         foreach($hyouji as $value)
         {
             $data=explode("<>",$value,4);
-            echo 'Nr. ' . $data[0] . '<br/>' . "name: " . $data[1] . '<br/>';
-            echo 'comment: ' . $data[2] . '<br/>' . $data[3]. '<br/><br/>';
+
+
+            echo '
+            <table style="width: 400px">
+                <tr>
+                    <td class="hclass">No.' . $data[0] . '</td>
+                    <td>' . $data[2] . '</td>
+                </tr>
+                <tr>
+                    <td class="hclass">name:</td>
+                    <td>' . $data[1] . '</td>
+                </tr>
+                <tr>
+                    <td class="hclass">comment:</td>
+                    <td>' . $data[3] . '</td>
+                </tr>
+            </table>
+            <br/><br/>';
         }
 
         ?>
