@@ -22,30 +22,24 @@
             <li>
                 <a href="mission2/kadai2-1.txt">kadai2-1.txt</a>
             </li>
-            <li>
-                <a href="mission1/mission1-1.php">mission1-1.php</a>
-            </li>
-            <li>
-                <a href="mission1/mission1-2.php">mission1-2.php</a>
-            </li>
-            <li>
-                <a href="mission1/mission1-3.php">mission1-3.php</a>
-            </li>
-            <li>
-                <a href="mission1/mission1-4.php">mission1-4.php</a>
-            </li>
-            <li>
-                <a href="mission1/mission1-5.php">mission1-5.php</a>
-            </li>
-            <li>
-                <a href="mission1/mission1-6.php">mission1-6.php</a>
-            </li>
-            <li>
-                <a href="mission1/mission1-7.php">mission1-7.php</a>
-            </li>
-            <li>
-                <a href="mission2/mission2-1.php">mission2-1.php</a>
-            </li>
+            <?php
+            for($i = 1; $i <= 7; $i++)
+            {
+                echo "<li>";
+                echo "<a href='mission1/mission1-" . $i;
+                echo ".php'>mission1-" . $i;
+                echo ".php</a>";
+                echo "</li>";
+            }
+            for($i = 1; $i <= 15; $i++)
+            {
+                echo "<li>";
+                echo "<a href='mission2/mission2-" . $i;
+                echo ".php'>mission2-" . $i;
+                echo ".php</a>";
+                echo "</li>";
+            }
+            ?>
         </ul>
 
     </body>

@@ -1,11 +1,11 @@
-<title>mission2-2</title>
+<title>mission2-3</title>
 <html>
 <head>
     <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
     <center>
-        <form action="mission2-2.php" method="post">
+        <form action="mission2-3.php" method="post">
             <table>
                 <tr>
                     <td>name</td>
@@ -21,11 +21,11 @@
             </table>
             <br />
             <input type="submit" value="submit" />
-            
+
         </form>
 
         <?php
-        $filename='kadai2-2.txt';
+        $filename='kadai2-3.txt';
         if(!empty($_POST["comment"]) and !empty($_POST["name"]))
         {
 
@@ -52,7 +52,9 @@
         $hyouji=file($filename);
         foreach($hyouji as $value)
         {
-            print $value . "<br />";
+            $data=explode("<>",$value,4);
+            echo 'Nr. ' . $data[0] . '<br/>' . "name: " . $data[1] . '<br/>';
+            echo 'comment: ' . $data[2] . '<br/>' . $data[3]. '<br/><br/>';
         }
 
         ?>

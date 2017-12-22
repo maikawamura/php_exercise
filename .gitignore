@@ -259,3 +259,6 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/php_exercise1/php_exercise1/mission2/kadai2-3.txt
+/php_exercise1/php_exercise1/mission2/kadai2-2.txt
+/php_exercise1/php_exercise1/mission2/kadai2-1.txt
