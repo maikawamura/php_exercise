@@ -7,7 +7,7 @@
     <center>
         <form action="mission2-4.php" method="post">
             <h2>Submit entry:</h2>
-            <table>
+            <table class="formtable">
                 <tr>
                     <td class="hclass">Name</td>
                     <td>
@@ -28,7 +28,7 @@
         <form action="mission2-4.php" method="post">
 
             <h2>Delete entry:</h2>
-            <table>
+            <table class="formtable">
                 <tr>
                     <td class="hclass">Entry No.</td>
                     <td>
@@ -75,7 +75,7 @@
             foreach($hyouji as $value)
             {
                 $data=explode("<>",$value,4);
-                
+
                 if($data[0]!=$_POST["entry_number"])
                 {
                     fputs($fp,$value);
@@ -88,9 +88,9 @@
                     $new_value=implode("<>",$data) . "\n";
                     fputs($fp,$new_value);
                 }
-                
-            }
 
+            }
+            fclose($fp);
         }
 
         $hyouji=file($filename);

@@ -20,4 +20,9 @@ function display_array($array)
         <br/><br/>';
 }
 
+function remove_newlines($string)
+{
+    return str_replace(array("\r\n","\n")," ",$string);
+}
+
 ?>

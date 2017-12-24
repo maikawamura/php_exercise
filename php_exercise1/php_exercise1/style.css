@@ -11,11 +11,6 @@ p
     font-size: 30px;
 }
 
-table 
-{
-    width: 400px;
-}
-
 td 
 {
     vertical-align: top;
@@ -27,4 +22,19 @@ td
 {
     font-weight:700;
     width:20%;
+}
+
+.formtable
+{
+    width: 400px;
+}
+
+.bigtable
+{
+    width:1200px;
+}
+
+textarea
+{
+    resize : none;
 }

@@ -6,7 +6,7 @@
 <body>
     <center>
         <form action="mission2-3.php" method="post">
-            <table>
+            <table class="formtable">
                 <tr>
                     <td class="hclass">name</td>
                     <td>
