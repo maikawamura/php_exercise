@@ -10,6 +10,8 @@
 $filename='kadai1-2.txt';
 
 $fp=fopen($filename,'r');
-echo fread($fp,filesize($filename));
+//echo fread($fp,filesize($filename));
+fpassthru($fp);
+
 fclose($fp);
 ?>
