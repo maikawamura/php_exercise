@@ -1,5 +1,7 @@
 <?php
-
+/*
+ * displays array as table
+ * */
 function display_array($array)
 {
     echo '

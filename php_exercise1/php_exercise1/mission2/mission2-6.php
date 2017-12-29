@@ -111,7 +111,7 @@
 
 
                             <tr>
-                                <td class="hclass">No.</td>
+                                <td class="hclass">Entry No.</td>
                                 <td>
                                     <textarea name="edit_no" rows="1" cols="30" <?php echo $readonly ?>><?php echo $edit_num ?></textarea>
                                 </td>
