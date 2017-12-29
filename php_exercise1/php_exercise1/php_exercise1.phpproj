@@ -29,6 +29,8 @@
     <Compile Include="mission2\mission2-3.php" />
     <Compile Include="mission2\mission2-4.php" />
     <Compile Include="mission2\mission2-5.php" />
+    <Compile Include="mission2\mission2-6.php" />
+    <Compile Include="mission2\mission2-7.php" />
     <Compile Include="mission2\mission2.h.php" />
   </ItemGroup>
   <ItemGroup>
