@@ -18,25 +18,25 @@
             </li>
             <li>
                 <a href="mission2/kadai2-1.txt">kadai2-1.txt</a>
-            </li>
-            <?php
-            for($i = 1; $i <= 7; $i++)
-            {
-                echo "<li>
-                      <a href='mission1/mission1-" . $i .
-                      ".php'>mission1-" . $i .
-                      ".php</a>
-                      </li>";
-            }
-            for($i = 1; $i <= 15; $i++)
-            {
-                echo "<li>
-                      <a href='mission2/mission2-" . $i .
-                      ".php'>mission2-" . $i .
-                      ".php</a>
-                      </li>";
-            }
-            ?>
+            </li> 
+        <?php
+        for($i = 1; $i <= 7; $i++)
+        {
+        echo "<li>
+        <a href='mission1/mission1-" . $i .
+        ".php'>mission1-" . $i .
+        ".php</a>
+        </li>";
+        }
+        for($i = 1; $i <= 15; $i++)
+        {
+        echo "<li>
+        <a href='mission2/mission2-" . $i .
+        ".php'>mission2-" . $i .
+        ".php</a>
+        </li>";
+        }
+        ?>
         </ul>
 
     </body>
