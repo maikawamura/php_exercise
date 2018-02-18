@@ -1,11 +1,11 @@
 
-<title>mission2-11</title>
+<title>mission2-12</title>
 <html>
 <head>
     <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-    <h4>Insert page</h4>
+    <h4>id,name,comment</h4>
     <?php
     //tutorial code from w3schools.com
     $dsn = 'mysql:dbname=co_575_it_99sv_coco_com;host=localhost;charset=utf8';
@@ -17,21 +17,14 @@
         // set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        $sql=$conn->prepare("INSERT INTO tbtest(id,name,comment) VALUES('1',:name,:comment);");
-        $sql->bindParam(':name',$name,PDO::PARAM_STR);
-        $sql->bindParam(':comment',$comment,PDO::PARAM_STR);
-
-        $name='mai';
-        $comment='comment';
-        $sql->execute();
-
-        if(PDOStatement)
+        $sql='SELECT * FROM tbtest;';
+        $results=$conn->query($sql);
+        
+        foreach($results as $row)
         {
-            echo "Data inserted successfully";
-        }
-        else 
-        { 
-            echo "error"; 
+            echo $row['id'].',';
+            echo $row['name'].',';
+            echo $row['comment'].'<br/>';
         }
     }
     catch(PDOException $e)

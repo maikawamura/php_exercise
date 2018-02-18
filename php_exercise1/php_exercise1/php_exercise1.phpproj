@@ -23,7 +23,10 @@
     <Compile Include="mission1\mission1-4.php" />
     <Compile Include="mission2\mission2-10.php" />
     <Compile Include="mission2\mission2-11.php" />
-    <Compile Include="mission2\mission2-11vol2.php" />
+    <Compile Include="mission2\mission2-12.php" />
+    <Compile Include="mission2\mission2-13.php" />
+    <Compile Include="mission2\mission2-14.php" />
+    <Compile Include="mission2\mission2-15.php" />
     <Compile Include="mission2\mission2-2.php" />
     <Compile Include="mission2\mission2-1.php" />
     <Compile Include="mission1\mission1-6.php" />
@@ -37,6 +40,7 @@
     <Compile Include="mission2\mission2-8.php" />
     <Compile Include="mission2\mission2-9.php" />
     <Compile Include="mission2\mission2.h.php" />
+    <Compile Include="mission3\mission3-1.php" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="style.css" />
@@ -44,5 +48,6 @@
   <ItemGroup>
     <Folder Include="mission1\" />
     <Folder Include="mission2\" />
+    <Folder Include="mission3\" />
   </ItemGroup>
 </Project>

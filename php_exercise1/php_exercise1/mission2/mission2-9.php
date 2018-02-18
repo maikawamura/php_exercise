@@ -14,16 +14,16 @@
         $conn = new PDO($dsn, $username, $password);
         // set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo "Connected successfully<br/><br/>";
+        echo "Connected successfully<br/>";
 
         $sql="SHOW TABLES";
 
 
         $result = $conn->query($sql);
-        echo "Table created successfully<br/>";
+        echo "Table created successfully<br/><br/>";
         foreach($result as $row)
         {
-            echo $row[0] . "<br/>";
+            echo 'Table Name: ' . $row[0] . "<br/>";
         }
         echo "<hr>";
     }
